@@ -3,11 +3,12 @@
  * Represents the sales data 
  */
 public class SalesData {
-	int data [] = {0, 4, 42};
+	int data [] = {-1, 0, 4, 42, 84};
 	
 	public void display() {
 		int sum = 0;
-		for (int i=0; i<data.length;i++){
+		for (int i: data){
+
 			System.out.println("next value:"+ data[i]);
 			sum = sum +data[i];
 		}
